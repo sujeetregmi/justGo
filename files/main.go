@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -31,8 +30,8 @@ func readFile(filename string) {
 	fmt.Println("Text data inside the file is:\n", string(databyte))
 }
 
-func checkNilError(err error){
-	if err!=nil{
+func checkNilError(err error) {
+	if err != nil {
 		panic(err)
 	}
 }
